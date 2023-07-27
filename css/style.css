@@ -124,6 +124,8 @@
     padding-top: 5%;
 }
 
+/* CONTACTO */
+
 .contenedor__contacto {
     display: grid;
     width: 100%;
@@ -137,12 +139,12 @@
 
 .infocontacto {
     grid-area: infocontacto;
-    padding: 9rem;
-    text-align: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     color: black;
     background-color: #ffe5ec;
 }
+
 
 .infocontacto h1 {
     font-size: 3rem;
@@ -150,55 +152,58 @@
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     padding-top: 10%;
-    padding-bottom: 2rem;
+    padding-bottom: 10px;
 }
+
+.infocontacto p {
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border-bottom: 1px solid black;
+    padding: 1rem 0 1rem 0;
+    overflow: scroll;
+}
+
 
 .infocontacto a {
     text-decoration: none;
     color: black;
 }
 
-.infocontacto p {
-    font-family: 'Nunito', sans-serif;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-    border-bottom: 1px solid black;
-    font-size: 1rem;
-    font-weight: 400;
+.infocontacto i {
+    margin-left: 4rem;
+    font-size: 2rem;
 }
+
 
 
 .formcontacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     grid-area: formcontacto;
+    display: grid;
+    place-items: center;
     background-color: #ffafcc;
 }
 
-.form {
+.formcontacto h2 {
     padding: 1rem; 
     font-size: 1rem;
     color: black;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
-    flex-wrap: wrap;
 }
+
 
 .input {
-    flex-grow: 1;
-    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
 }
-
-.mb-3 {
-    margin-bottom: 1rem;
-}
-
-
 
 .botoncontacto {
     background-color: #bde0fe;
     color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
     padding-inline: 1rem;
     transition: .3s;
 }
@@ -265,6 +270,17 @@
         ;
     }
 
+    .contenedor__contacto {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "infocontacto"   
+            "formcontacto";
+    }
+
     .footer {
         background-color: #ffafcc;
     }
@@ -281,10 +297,6 @@
         background-size: cover;
     }
 
-    .footer {
-        background-color: #ffafcc;
-    }
-
     .contenedor {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -297,4 +309,18 @@
         ;
     }
 
+    .contenedor__contacto {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "infocontacto"   
+            "formcontacto";
+    }
+
+    .footer {
+        background-color: #ffafcc;
+    }
 }
