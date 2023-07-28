@@ -18,54 +18,59 @@
 /* INICIO */
 
 .hero {
-    background-image: url("./../img/barraolimpica.jpg");
+    background-image: url("../img/barraolimpica.jpg");
     height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: right;
+    align-items: end;
 }
 
 .titulo__inicio {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    padding: 0.5rem;
+    margin-right: 10px;
     color: black;
-    background-color: #bde0fe;
+    background-color:#ffafcc;
+
 }
 
 /* QUIENES SOMOS */
 
 .container__quienes {
-    padding: 3rem;
+    padding-inline: 50px;
     background-color:#ffe5ec;
-    text-align: center;
 }
 
-.container__quienes h1 {
-    font-family: 'Nunito', sans-serif;
-}
+/* SERVICIOS */
 
-.container__quienes p {
-    font-family:'Nunito', sans-serif;
-}
-
-
-.contenedor {
+.contenedor__servicios {
     display: grid;
-    width: 100%;
-    height: 100vh;
+    background-color: #ffe5ec;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
         "servicios servicios musculacion funcional"
         "servicios servicios running     hiit"
     ;
-
+    gap: 30px 30px;
+    padding-inline: 50px;
+    padding-top: 10px;
 }
 
 .caja {
-    border: 5px solid #ffe5ec;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    background-color: #ffafcc;
 }
 
 .servicios {
     grid-area: servicios;
-    background-color: #ffe5ec;
 }
 
 
@@ -76,7 +81,6 @@
 .funcional {
     grid-area: funcional;
 }
-
 
 .running {
     grid-area: running;
@@ -91,37 +95,70 @@
 }
 
 
-.actividades {
+.servicios {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    color: black;
-    padding-top: 2%;
     text-align: center;
 }
 
-.titulo__actividades {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-
-}
 
 .titulo_servicio {
+    padding: 20%;
+    font-size: 2.5rem;
+    font-weight: 600;
+} 
+
+.titulo__actividades {
+    padding: 10px;
+}
+
+/* MIS CLASES */
+
+.contenedor__misclases {
+    background-color: #ffafcc;
+}
+
+.contenedor__planes__descripcion {
     display: flex;
     justify-content: center;
-    align-items: top;
-    padding: 20%;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedor__planes__tarjetitas {
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
     text-align: center;
 }
 
-.descripcion_texto{
-    display: flex;
-    color: black;
-    justify-content: center;
-    text-align: center;
-    padding-top: 5%;
+.titulo__planes {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.parrafo__planes {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.tarjetita {
+    background-color: #ffe5ec;
+    padding-inline: 30px;
+}
+
+.tarjetita__titulo {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.tarjetita__texto {
+    padding: 10px;
 }
 
 /* CONTACTO */
@@ -162,7 +199,6 @@
     font-weight: 400;
     border-bottom: 1px solid black;
     padding: 1rem 0 1rem 0;
-    overflow: scroll;
 }
 
 
@@ -214,14 +250,15 @@
 }
 
 .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #bde0fe;
     padding: 2rem;
 }
 
 .footer h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
     font-weight: 100;
@@ -229,9 +266,6 @@
 }
 
 .redes__sociales{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 20px;
   }
 
@@ -239,11 +273,9 @@
     color: #333;
     text-decoration: none;
 }
+
 .copy {
     font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: black;
     padding-top: 2rem;
   }
@@ -255,12 +287,19 @@
         background-color: #ffafcc;
     }
     .hero {
-        background-image: url(./../img/musculacion.jpeg);
+        background-image: url("../img/musculacion.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center center;
     }
 
-    .contenedor {
+    .titulo__inicio {
+        background-color: #bde0fe;
+        padding: 3px;
+        margin-bottom: 20px;
+    }
+
+    .contenedor__servicios {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: 
@@ -268,6 +307,32 @@
             "musculacion    funcional"
             "running        hiit"
         ;
+    }
+
+    .caja {
+        background-color: #bde0fe;
+    }
+
+    .contenedor__misclases {
+        background-color: white;
+    }
+
+    .contenedor__planes__descripcion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .contenedor__planes__tarjetitas {
+        padding-inline: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        text-align: center;
     }
 
     .contenedor__contacto {
@@ -292,12 +357,19 @@
     }
     
     .hero {
-        background-image: url(./../img/musculacion.jpeg);
+        background-image: url("../img/musculacion.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center center;
     }
 
-    .contenedor {
+    .titulo__inicio {
+        background-color: #bde0fe;
+        padding: 3px;
+        margin-bottom: 20px;
+    }
+
+    .contenedor__servicios {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
@@ -307,6 +379,32 @@
             "running"
             "hiit"
         ;
+    }
+
+    .caja {
+        background-color: #bde0fe;
+    }
+
+    .contenedor__misclases {
+        background-color: white;
+    }
+    
+    .contenedor__planes__descripcion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .contenedor__planes__tarjetitas {
+        padding-inline: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        text-align: center;
     }
 
     .contenedor__contacto {
