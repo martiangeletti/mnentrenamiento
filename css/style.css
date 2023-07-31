@@ -135,9 +135,11 @@
 
 .row {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     padding-inline: 20px;
 }
+
 
 .row h1 {
     font-family: 'Nunito', sans-serif;
@@ -166,6 +168,8 @@
     color: black;
     border: 0;
     border-radius: 5px;
+    position: relative;
+    flex-direction: column;
 }
 
 .contenedor__planes .card-title {
