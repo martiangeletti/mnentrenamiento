@@ -124,51 +124,81 @@
 
 /* MIS CLASES */
 
-.contenedor__misclases {
+.contenedor__planes {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
     background-color: #ffafcc;
-}
+} 
 
-.contenedor__planes__descripcion {
+.row {
     display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    padding: 20px;
+    padding-inline: 20px;
 }
 
-.contenedor__planes__tarjetitas {
-    padding: 30px;
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    text-align: center;
-}
-
-.titulo__planes {
+.row h1 {
+    font-family: 'Nunito', sans-serif;
     font-size: 40px;
     font-weight: 600;
+    color: black;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
-.parrafo__planes {
+.row h2 {
+    font-family: 'Nunito', sans-serif;
     font-size: 20px;
     font-weight: 400;
-    padding-top: 10px;
+    color: black;
 }
 
-.tarjetita {
+.row__cards {
+    margin-top: 20px;
+}
+
+.contenedor__planes .card {
+    display: flex;
+    padding: 10px;
     background-color: #ffe5ec;
-    padding-inline: 30px;
+    color: black;
+    border: 0;
+    border-radius: 5px;
 }
 
-.tarjetita__titulo {
+.contenedor__planes .card-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.contenedor__planes .card-body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.precio {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.contenedor__planes h4 {
+    font-family: 'Nunito', sans-serif;
     font-size: 30px;
     font-weight: 600;
-    padding: 20px;
 }
 
-.tarjetita__texto {
-    padding: 10px;
+.contenedor__planes .card-text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
 }
+
 
 /* CONTACTO */
 
@@ -319,27 +349,6 @@
         background-color: #bde0fe;
     }
 
-    .contenedor__misclases {
-        background-color: white;
-    }
-
-    .contenedor__planes__descripcion {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-    }
-    
-    .contenedor__planes__tarjetitas {
-        padding-inline: 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        justify-content: center;
-        text-align: center;
-    }
 
     .contenedor__contacto {
         display: grid;
@@ -389,28 +398,6 @@
 
     .caja {
         background-color: #bde0fe;
-    }
-
-    .contenedor__misclases {
-        background-color: white;
-    }
-    
-    .contenedor__planes__descripcion {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-    }
-    
-    .contenedor__planes__tarjetitas {
-        padding-inline: 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        justify-content: center;
-        text-align: center;
     }
 
     .contenedor__contacto {
