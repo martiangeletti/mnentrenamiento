@@ -35,7 +35,6 @@
 }
 
 .titulo__inicio {
-    font-family: 'Nunito', sans-serif;
     font-weight: 600;
     padding: 0.5rem;
     margin-right: 10px;
@@ -113,7 +112,6 @@
 .titulo_servicio {
     padding: 10%;
     font-size: 2.5rem;
-    font-family: 'Nunito', sans-serif;
     font-weight: 600;
 } 
 
@@ -141,7 +139,6 @@
 
 
 .row h1 {
-    font-family: 'Nunito', sans-serif;
     font-size: 40px;
     font-weight: 600;
     color: black;
@@ -150,7 +147,6 @@
 }
 
 .row h2 {
-    font-family: 'Nunito', sans-serif;
     font-size: 20px;
     font-weight: 400;
     color: black;
@@ -172,7 +168,6 @@
 }
 
 .contenedor__planes .card-title {
-    font-family: 'Nunito', sans-serif;
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -180,7 +175,6 @@
 }
 
 .contenedor__planes .card-body {
-    font-family: 'Nunito', sans-serif;
     font-size: 20px;
     font-weight: 400;
 }
@@ -191,13 +185,11 @@
 }
 
 .contenedor__planes h4 {
-    font-family: 'Nunito', sans-serif;
     font-size: 30px;
     font-weight: 600;
 }
 
 .contenedor__planes .card-text {
-    font-family: 'Nunito', sans-serif;
     font-size: 20px;
     font-weight: 400;
 }
@@ -228,14 +220,12 @@
 
 .infocontacto h1 {
     color: black;
-    font-family: 'Nunito', sans-serif;
     font-size: 3rem;
     font-weight: 600;
     padding-bottom: 30px;
 }
 
 .infocontacto p {
-    font-family: 'Nunito', sans-serif;
     font-size: 1rem;
     font-weight: 400;
 }
@@ -265,7 +255,6 @@
 }
 
 .titulo-contacto h2 {
-    font-family: 'Nunito', sans-serif;
     font-weight: 600;
     font-size: 1rem;
     color: black;
@@ -297,7 +286,6 @@
     align-self: start;
     background-color: #ffe5ec;
     color: black;
-    font-family: 'Nunito', sans-serif;
     font-weight: 600;
     padding-inline: 1rem;
     transition: .3s;
@@ -318,7 +306,6 @@
 }
 
 .footer h2 {
-    font-family: 'Nunito', sans-serif;
     font-size: 20px;
     font-weight: 100;
     color: white;
