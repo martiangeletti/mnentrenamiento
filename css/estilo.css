@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+*::-moz-selection {
+  background-color: black;
+  color: #ffafcc;
+}
+*::selection {
+  background-color: black;
+  color: #ffafcc;
+}
+
+header .navbar {
+  background-color: #bde0fe;
+}
+header .navbar a:hover {
+  background-color: #a2d2ff;
+  color: white;
+  transition: 0.3s;
+}
+header .navbar .container-fluid .navbar-brand {
+  color: black;
+}
+
+.hero {
+  background-image: url("../img/barraolimpica.jpg");
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: right;
+  align-items: end;
+}
+.hero .titulo__inicio {
+  font-weight: 700;
+  padding: 0.5rem;
+  margin-right: 10px;
+  color: black;
+  background-color: #ffafcc;
+}
+
+.contenedor-quienes {
+  background-color: #ffafcc;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.contenedor-quienes .info-quienes {
+  text-align: center;
+}
+.contenedor-quienes .info-quienes h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  padding-bottom: 2rem;
+}
+.contenedor-quienes .info-quienes p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+  padding-bottom: 2rem;
+}
+
+.contenedor-quienes {
+  background-color: #ffafcc;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.contenedor-quienes .cards-profes {
+  padding: 50px;
+  display: flex;
+  gap: 20px;
+}
+.contenedor-quienes .cards-profes .card {
+  background-color: #ffe5ec;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  flex: 1;
+}
+.contenedor-quienes .cards-profes .card .card-imagen {
+  max-width: 100%;
+}
+.contenedor-quienes .cards-profes .card .info-profes {
+  padding: 30px;
+}/*# sourceMappingURL=estilo.css.map */

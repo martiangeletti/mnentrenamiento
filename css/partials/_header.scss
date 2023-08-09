@@ -1,0 +1,18 @@
+header {
+    .navbar {
+        background-color: #bde0fe;
+
+        & a:hover {
+            background-color: #a2d2ff;
+            color: white;
+            transition: .3s;
+        }
+    
+        .container-fluid {
+    
+            .navbar-brand {
+                color: black;
+            }
+        }
+    }
+}
