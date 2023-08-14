@@ -78,7 +78,7 @@ header .navbar .container-fluid .navbar-nav .nav-item5 {
 }
 .hero .titulo__inicio {
   animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   padding: 0.5rem;
   margin-right: 10px;
