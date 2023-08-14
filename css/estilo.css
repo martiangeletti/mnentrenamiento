@@ -40,19 +40,19 @@ header .navbar .container-fluid .navbar-nav .nav-item:hover {
   transition: 0.3s;
 }
 header .navbar .container-fluid .navbar-nav .nav-item1 {
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
 }
 header .navbar .container-fluid .navbar-nav .nav-item2 {
-  animation-delay: 1s;
+  animation-delay: 0.6s;
 }
 header .navbar .container-fluid .navbar-nav .nav-item3 {
-  animation-delay: 1.5s;
+  animation-delay: 0.9s;
 }
 header .navbar .container-fluid .navbar-nav .nav-item4 {
-  animation-delay: 2s;
+  animation-delay: 1.2s;
 }
 header .navbar .container-fluid .navbar-nav .nav-item5 {
-  animation-delay: 2.5s;
+  animation-delay: 1.5s;
 }
 @keyframes scale-in-hor-left {
   0% {
@@ -67,7 +67,7 @@ header .navbar .container-fluid .navbar-nav .nav-item5 {
   }
 }
 .hero {
-  background-image: url("../../img/musculacion.jpeg");
+  background-image: url("../img/musculacion.jpeg");
   height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -75,10 +75,10 @@ header .navbar .container-fluid .navbar-nav .nav-item5 {
   display: flex;
   justify-content: right;
   align-items: end;
-  text-align: center;
 }
 .hero .titulo__inicio {
   animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  font-size: 3rem;
   font-weight: 700;
   padding: 0.5rem;
   margin-right: 10px;
@@ -109,13 +109,13 @@ header .navbar .container-fluid .navbar-nav .nav-item5 {
   text-align: center;
 }
 .contenedor-quienes .info-quienes h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: black;
   padding-bottom: 2rem;
 }
 .contenedor-quienes .info-quienes p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: black;
   padding-bottom: 2rem;
@@ -147,6 +147,16 @@ header .navbar .container-fluid .navbar-nav .nav-item5 {
 }
 .contenedor-quienes .cards-profes .card .info-profes {
   padding: 30px;
+}
+.contenedor-quienes .cards-profes .card .card-titulo {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 700;
+}
+.contenedor-quienes .cards-profes .card .card-texto {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: black;
 }
 
 .contenedor__servicios {
@@ -221,14 +231,14 @@ header .navbar .container-fluid .navbar-nav .nav-item5 {
   padding-inline: 20px;
 }
 .contenedor__planes .row h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
   color: black;
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
 .contenedor__planes .row h2 {
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 400;
   color: black;
 }
@@ -237,13 +247,16 @@ header .navbar .container-fluid .navbar-nav .nav-item5 {
 }
 .contenedor__planes .row.row__cards .card {
   display: flex;
-  padding: 10px;
   background-color: #ffe5ec;
   color: black;
   border: 0;
   border-radius: 5px;
-  position: relative;
   flex-direction: column;
+  gap: 30px;
+  transition: transform 1s;
+}
+.contenedor__planes .row.row__cards .card:hover {
+  transform: scale(1.1);
 }
 .contenedor__planes .row.row__cards .card .card-title {
   font-size: 2.5rem;
@@ -260,11 +273,11 @@ header .navbar .container-fluid .navbar-nav .nav-item5 {
   font-size: 3rem;
 }
 .contenedor__planes .row.row__cards .card .card-text {
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 .contenedor__planes .row.row__cards .card .card-text .h4 {
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 

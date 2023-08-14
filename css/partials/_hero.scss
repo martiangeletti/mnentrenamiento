@@ -1,5 +1,5 @@
 .hero {
-    background-image: url("../../img/musculacion.jpeg");
+    background-image: url("../img/musculacion.jpeg");
     height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,10 +7,10 @@
     display: flex;
     justify-content: right;
     align-items: end;
-    text-align: center;
 
     .titulo__inicio {
         -webkit-animation:tracking-in-expand-fwd .8s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand-fwd .8s cubic-bezier(.215,.61,.355,1.000) both;
+        font-size: 3rem;
         font-weight: 700;
         padding: 0.5rem;
         margin-right: 10px;

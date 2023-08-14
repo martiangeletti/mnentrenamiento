@@ -35,7 +35,7 @@ header {
 
                 @for $navItem from 1 through 5 {
                     .nav-item#{$navItem} {
-                        animation-delay: $navItem*0.5s;
+                        animation-delay: $navItem*0.3s;
                     }
                 }
             }
