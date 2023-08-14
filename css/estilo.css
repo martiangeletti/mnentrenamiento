@@ -14,20 +14,60 @@
   color: #ffafcc;
 }
 
-header .navbar {
+header {
   background-color: #bde0fe;
+  padding: 1.3rem;
+  gap: 20px;
 }
-header .navbar a:hover {
+header .navbar .container-fluid .navbar-brand {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+header .navbar .container-fluid .navbar-nav {
+  gap: 20px;
+}
+header .navbar .container-fluid .navbar-nav .nav-item {
+  animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+header .navbar .container-fluid .navbar-nav .nav-item a {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+header .navbar .container-fluid .navbar-nav .nav-item:hover {
   background-color: #a2d2ff;
   color: white;
   transition: 0.3s;
 }
-header .navbar .container-fluid .navbar-brand {
-  color: black;
+header .navbar .container-fluid .navbar-nav .nav-item1 {
+  animation-delay: 0.5s;
 }
-
+header .navbar .container-fluid .navbar-nav .nav-item2 {
+  animation-delay: 1s;
+}
+header .navbar .container-fluid .navbar-nav .nav-item3 {
+  animation-delay: 1.5s;
+}
+header .navbar .container-fluid .navbar-nav .nav-item4 {
+  animation-delay: 2s;
+}
+header .navbar .container-fluid .navbar-nav .nav-item5 {
+  animation-delay: 2.5s;
+}
+@keyframes scale-in-hor-left {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 0 0;
+    opacity: 1;
+  }
+}
 .hero {
-  background-image: url("../img/barraolimpica.jpg");
+  background-image: url("../../img/musculacion.jpeg");
   height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,15 +75,30 @@ header .navbar .container-fluid .navbar-brand {
   display: flex;
   justify-content: right;
   align-items: end;
+  text-align: center;
 }
 .hero .titulo__inicio {
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   font-weight: 700;
   padding: 0.5rem;
   margin-right: 10px;
   color: black;
   background-color: #ffafcc;
 }
-
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
 .contenedor-quienes {
   background-color: #ffafcc;
   display: flex;
@@ -92,4 +147,246 @@ header .navbar .container-fluid .navbar-brand {
 }
 .contenedor-quienes .cards-profes .card .info-profes {
   padding: 30px;
+}
+
+.contenedor__servicios {
+  display: grid;
+  background-color: #ffafcc;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "servicios servicios musculacion funcional" "servicios servicios running     hiit";
+  gap: 30px 30px;
+  padding-inline: 50px;
+  padding: 10px;
+}
+.contenedor__servicios .servicios {
+  grid-area: servicios;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.contenedor__servicios .servicios .titulo_servicio {
+  padding: 10%;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.contenedor__servicios .servicios .descripcion_texto {
+  color: black;
+  font-weight: 400;
+}
+.contenedor__servicios .caja {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  color: black;
+  background-color: #ffe5ec;
+}
+.contenedor__servicios .caja.musculacion {
+  grid-area: musculacion;
+}
+.contenedor__servicios .caja.funcional {
+  grid-area: funcional;
+}
+.contenedor__servicios .caja.running {
+  grid-area: running;
+}
+.contenedor__servicios .caja.hiit {
+  grid-area: hiit;
+}
+.contenedor__servicios .caja .imagen {
+  width: 100%;
+}
+.contenedor__servicios .caja .titulo__actividades {
+  padding: 10px;
+}
+.contenedor__servicios .caja .actividades {
+  color: black;
+  font-weight: 400;
+}
+
+.contenedor__planes {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #ffafcc;
+}
+.contenedor__planes .row {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-inline: 20px;
+}
+.contenedor__planes .row h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.contenedor__planes .row h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+}
+.contenedor__planes .row.row__cards {
+  margin-top: 20px;
+}
+.contenedor__planes .row.row__cards .card {
+  display: flex;
+  padding: 10px;
+  background-color: #ffe5ec;
+  color: black;
+  border: 0;
+  border-radius: 5px;
+  position: relative;
+  flex-direction: column;
+}
+.contenedor__planes .row.row__cards .card .card-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.contenedor__planes .row.row__cards .card .card-body {
+  font-size: 20px;
+  font-weight: 400;
+}
+.contenedor__planes .row.row__cards .card .card-body .precio {
+  font-weight: 800;
+  font-size: 3rem;
+}
+.contenedor__planes .row.row__cards .card .card-text {
+  font-size: 20px;
+  font-weight: 400;
+}
+.contenedor__planes .row.row__cards .card .card-text .h4 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.contenedor__contacto {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "infocontacto   formcontacto";
+}
+.contenedor__contacto .infocontacto {
+  grid-area: infocontacto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffe5ec;
+}
+.contenedor__contacto .infocontacto h1 {
+  color: black;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+.contenedor__contacto .infocontacto p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.contenedor__contacto .infocontacto a {
+  text-decoration: none;
+  color: black;
+}
+.contenedor__contacto .infocontacto i {
+  font-size: 2rem;
+}
+.contenedor__contacto .formcontacto {
+  grid-area: formcontacto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffafcc;
+}
+.contenedor__contacto .formcontacto .titulo-contacto {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+.contenedor__contacto .formcontacto .titulo-contacto h2 {
+  font-weight: 700;
+  font-size: 1rem;
+  color: black;
+  text-align: start;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+.contenedor__contacto .formcontacto .formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem;
+}
+.contenedor__contacto .formcontacto .formulario .form-grupo {
+  display: flex;
+  flex-direction: column;
+}
+.contenedor__contacto .formcontacto .formulario input, .contenedor__contacto .formcontacto .formulario textarea {
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+.contenedor__contacto .formcontacto .formulario .boton-contacto {
+  align-self: start;
+  background-color: #ffe5ec;
+  color: black;
+  font-weight: 700;
+  padding-inline: 1rem;
+  transition: 0.3s;
+}
+.contenedor__contacto .formcontacto .formulario .boton-contacto:hover {
+  background-color: #ffafcc;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 4rem;
+}
+.footer h2 {
+  font-size: 20px;
+  font-weight: 100;
+  color: white;
+}
+.footer .redes__sociales {
+  display: flex;
+  gap: 1rem;
+  font-size: 20px;
+}
+.footer .redes__sociales a {
+  color: #333;
+  text-decoration: none;
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.footer .redes__sociales a:hover {
+  background-color: #ffafcc;
+  color: white;
+}
+.footer .redes__sociales a i {
+  transition: 0.3s;
+}
+.footer .copy {
+  font-size: 1rem;
+  color: white;
+  padding-top: 2rem;
 }/*# sourceMappingURL=estilo.css.map */

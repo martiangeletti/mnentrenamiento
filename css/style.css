@@ -12,11 +12,22 @@
     color: #ffafcc;
 }
 
-.navbar {
+header {
     background-color: #bde0fe;
+    gap: 20px;
+    padding: 1.3rem;
 }
 
-.navbar a:hover {
+.navbar-nav {
+    gap: 20px;
+}
+
+.nav-item a{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.nav-item a:hover {
     background-color: #a2d2ff;
     color: white;
     transition: .3s;
@@ -24,12 +35,14 @@
 
 .navbar-brand {
     color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 /* INICIO */
 
 .hero {
-    background-image: url("../img/barraolimpica.jpg");
+    background-image: url("../img/musculacion.jpeg");
     height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -161,8 +174,18 @@
     font-weight: 700;
 } 
 
+.descripcion_texto {
+    color: black;
+    font-weight: 400;
+}
+
 .titulo__actividades {
     padding: 10px;
+}
+
+.actividades {
+    color: black;
+    font-weight: 400;
 }
 
 /* MIS CLASES */
@@ -342,6 +365,8 @@
     color: white;
 }
 
+/* FOOTER */
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -361,7 +386,7 @@
     display: flex;
     gap: 1rem;
     font-size: 20px;
-  }
+}
 
 .redes__sociales a {
     color: #333;
@@ -389,23 +414,13 @@ i {
     font-size: 1rem;
     color: white;
     padding-top: 2rem;
-  }
+}
 
 
 
 @media screen and (max-width: 768px) {
-    .navbar {
-        background-color: #ffafcc;
-    }
-    .hero {
-        background-image: url("../img/musculacion.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
 
     .titulo__inicio {
-        background-color: #bde0fe;
         padding: 3px;
         margin-bottom: 20px;
     }
@@ -436,19 +451,8 @@ i {
 }
 
 @media screen and (max-width: 480px) {
-    .navbar  {
-        background-color: #ffafcc;
-    }
     
-    .hero {
-        background-image: url("../img/musculacion.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-
     .titulo__inicio {
-        background-color: #bde0fe;
         padding: 3px;
         margin-bottom: 20px;
     }

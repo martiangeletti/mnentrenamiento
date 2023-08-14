@@ -1,0 +1,70 @@
+.contenedor__servicios {
+    display: grid;
+    background-color: $mainColor;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "servicios servicios musculacion funcional"
+        "servicios servicios running     hiit"
+    ;
+    gap: 30px 30px;
+    padding-inline: 50px;
+    padding: 10px;
+
+    .servicios {
+        grid-area: servicios;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        .titulo_servicio {
+            padding: 10%;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .descripcion_texto {
+            color: black;
+            font-weight: 400;
+        }
+    }    
+
+    .caja {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        color: black;
+        background-color: $secondaryColor;
+
+        &.musculacion {
+            grid-area: musculacion;
+        }
+        
+        &.funcional {
+            grid-area: funcional;
+        }
+        
+        &.running {
+            grid-area: running;
+        }
+        
+        &.hiit {
+            grid-area: hiit;
+        }
+
+        .imagen {
+            width: 100%;
+        }
+
+        .titulo__actividades {
+            padding: 10px;
+        }
+
+        .actividades {
+            color: black;
+            font-weight: 400;
+        }
+    }
+}

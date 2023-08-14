@@ -1,18 +1,47 @@
 header {
-    .navbar {
-        background-color: #bde0fe;
+    background-color: #bde0fe;
+    padding: 1.3rem;
+    gap: 20px;
 
-        & a:hover {
-            background-color: #a2d2ff;
-            color: white;
-            transition: .3s;
-        }
-    
+    .navbar {
+
         .container-fluid {
-    
+
             .navbar-brand {
                 color: black;
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+
+            .navbar-nav {
+                gap: 20px;
+
+                .nav-item {
+                    -webkit-animation:scale-in-hor-left .5s cubic-bezier(.25,.46,.45,.94) both;
+                    animation:scale-in-hor-left .5s cubic-bezier(.25,.46,.45,.94) both;
+
+                    
+                    & a {
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                    }
+
+                    &:hover {
+                        background-color: #a2d2ff;
+                        color: white;
+                        transition: .3s;
+                    }
+                }
+
+                @for $navItem from 1 through 5 {
+                    .nav-item#{$navItem} {
+                        animation-delay: $navItem*0.5s;
+                    }
+                }
             }
         }
     }
 }
+
+ @-webkit-keyframes scale-in-hor-left{0%{-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 0;transform-origin:0 0;opacity:1}100%{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transform-origin:0 0;transform-origin:0 0;opacity:1}}
+ @keyframes scale-in-hor-left{0%{-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 0;transform-origin:0 0;opacity:1}100%{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transform-origin:0 0;transform-origin:0 0;opacity:1}}

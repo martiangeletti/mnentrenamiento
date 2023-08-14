@@ -1,5 +1,5 @@
 .hero {
-    background-image: url("../img/barraolimpica.jpg");
+    background-image: url("../../img/musculacion.jpeg");
     height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,13 +7,19 @@
     display: flex;
     justify-content: right;
     align-items: end;
+    text-align: center;
 
     .titulo__inicio {
+        -webkit-animation:tracking-in-expand-fwd .8s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand-fwd .8s cubic-bezier(.215,.61,.355,1.000) both;
         font-weight: 700;
         padding: 0.5rem;
         margin-right: 10px;
         color: black;
         background-color: $mainColor;
-    
     }
 }
+
+
+
+ @-webkit-keyframes tracking-in-expand-fwd{0%{letter-spacing:-.5em;-webkit-transform:translateZ(-700px);transform:translateZ(-700px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
+ @keyframes tracking-in-expand-fwd{0%{letter-spacing:-.5em;-webkit-transform:translateZ(-700px);transform:translateZ(-700px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
