@@ -59,13 +59,39 @@
         }
 
         .titulo__actividades {
+            font-size: 1.5rem;
+            font-weight: 400;
             padding: 10px;
         }
 
         .actividades {
+            font-size: 1rem;
+            font-weight: 400;
             color: black;
             font-weight: 400;
         }
+    }
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "servicios      servicios"
+            "musculacion    funcional"
+            "running        hiit"
+        ;
+    }
+
+    @media screen and (max-width: 480px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "servicios"
+            "musculacion"
+            "funcional"
+            "running"
+            "hiit"
+        ;
     }
 
 }

@@ -124,11 +124,9 @@ header .navbar .container-fluid .navbar-nav .nav-item5 {
 .contenedor-quienes {
   background-color: #ffafcc;
   display: flex;
-  flex-direction: column;
   padding: 2rem;
 }
 .contenedor-quienes .cards-profes {
-  padding: 50px;
   display: flex;
   gap: 20px;
 }
@@ -137,7 +135,6 @@ header .navbar .container-fluid .navbar-nav .nav-item5 {
   border-radius: 30px;
   overflow: hidden;
   display: flex;
-  flex-direction: column;
   text-align: center;
   gap: 10px;
   flex: 1;
@@ -157,6 +154,16 @@ header .navbar .container-fluid .navbar-nav .nav-item5 {
   font-size: 1.2rem;
   font-weight: 400;
   color: black;
+}
+@media screen and (max-width: 768px) {
+  .contenedor-quienes .cards-profes {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contenedor-quienes .cards-profes {
+    flex-direction: column;
+  }
 }
 
 .contenedor__servicios {
@@ -209,11 +216,29 @@ header .navbar .container-fluid .navbar-nav .nav-item5 {
   width: 100%;
 }
 .contenedor__servicios .caja .titulo__actividades {
+  font-size: 1.5rem;
+  font-weight: 400;
   padding: 10px;
 }
 .contenedor__servicios .caja .actividades {
+  font-size: 1rem;
+  font-weight: 400;
   color: black;
   font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .contenedor__servicios {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "servicios      servicios" "musculacion    funcional" "running        hiit";
+  }
+}
+@media screen and (max-width: 480px) {
+  .contenedor__servicios {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "servicios" "musculacion" "funcional" "running" "hiit";
+  }
 }
 
 .contenedor__planes {
@@ -283,8 +308,6 @@ header .navbar .container-fluid .navbar-nav .nav-item5 {
 
 .contenedor__contacto {
   display: grid;
-  width: 100%;
-  height: 100vh;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "infocontacto   formcontacto";
 }
@@ -295,12 +318,13 @@ header .navbar .container-fluid .navbar-nav .nav-item5 {
   justify-content: center;
   text-align: center;
   background-color: #ffe5ec;
+  padding: 2rem;
 }
 .contenedor__contacto .infocontacto h1 {
   color: black;
   font-size: 3rem;
   font-weight: 700;
-  padding-bottom: 30px;
+  padding-bottom: 2rem;
 }
 .contenedor__contacto .infocontacto p {
   font-size: 1rem;
@@ -359,6 +383,20 @@ header .navbar .container-fluid .navbar-nav .nav-item5 {
 .contenedor__contacto .formcontacto .formulario .boton-contacto:hover {
   background-color: #ffafcc;
   color: white;
+}
+@media screen and (max-width: 768px) {
+  .contenedor__contacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "infocontacto" "formcontacto";
+  }
+}
+@media screen and (max-width: 480px) {
+  .contenedor__contacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "infocontacto" "formcontacto";
+  }
 }
 
 .footer {
