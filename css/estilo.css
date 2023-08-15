@@ -308,7 +308,8 @@ header .navbar .container-fluid .navbar-nav .nav-item5 {
 
 .contenedor__contacto {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  grid-template-columns: 2fr 2fr;
   grid-template-areas: "infocontacto   formcontacto";
 }
 .contenedor__contacto .infocontacto {
@@ -339,6 +340,7 @@ header .navbar .container-fluid .navbar-nav .nav-item5 {
 }
 .contenedor__contacto .formcontacto {
   grid-area: formcontacto;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -405,7 +407,7 @@ header .navbar .container-fluid .navbar-nav .nav-item5 {
   justify-content: center;
   align-items: center;
   background-color: black;
-  padding: 4rem;
+  padding: 3.5rem;
 }
 .footer h2 {
   font-size: 20px;

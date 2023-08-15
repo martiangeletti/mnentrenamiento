@@ -1,6 +1,7 @@
 .contenedor__contacto {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    grid-template-columns: 2fr 2fr;
     grid-template-areas: 
         "infocontacto   formcontacto";
     ;
@@ -38,6 +39,7 @@
 
     .formcontacto {
         grid-area: formcontacto;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
